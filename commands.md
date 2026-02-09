@@ -70,6 +70,16 @@ Some points to note:-
                              \                          /
                               \                        /
         bug-fix:               o----------o----------o
+```mermaid
+gitGraph
+   commit id: "A"
+   branch bug-fix
+   checkout bug-fix
+   commit id: "B"
+   commit id: "C"
+   commit id: "D"
+   checkout main
+   merge bug-fix id: "merge"
 
 - `git checkout main`- This command switches to the `main` branch.
 - `git merge bug-fix`- This command merges the `bug-fix` branch in to the `main` branch.
@@ -84,5 +94,15 @@ Some points to note:-
                               \                        /
         bug-fix:               o----------o----------o          
 
-
-
+```mermaid
+gitGraph
+   commit id: "A"
+   branch bug-fix
+   checkout bug-fix
+   commit id: "B"
+   commit id: "C"
+   commit id: "D"
+   checkout main
+   commit id: "E"
+   commit id: "F"
+   merge bug-fix id: "merge"
