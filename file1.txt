@@ -1,1 +1,3 @@
 this is a file one ofr git hub 
+i have added bug fix file changes
+to test the merge functionality
